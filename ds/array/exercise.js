@@ -51,3 +51,19 @@ class Wizard extends Player {
 
 const wizard1 = new Wizard('Shelly', 'Healer');
 const wizard2 = new Wizard('Shawn', 'Dark Magic');
+
+// Classic Inheritance Example
+var Player1 = function(name, type) {
+    this.name = name;
+    this.type = type;
+}
+
+// methods are added to the prototype of the constructor function
+Player1.prototype.introduce = function() {
+    console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
+}
+var wizard3 = new Player1('Shelly', 'Healer');
+var wizard4 = new Player1('Shawn', 'Dark Magic');
+
+wizard3.introduce();
+wizard4.introduce();
