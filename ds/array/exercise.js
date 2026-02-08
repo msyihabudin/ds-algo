@@ -34,6 +34,10 @@ class Player {
     }
 }
 
+// extends keyword is used to create a subclass
+// subclass inherits properties and methods from the parent class
+// subclass can have its own properties and methods
+// subclass can override methods from the parent class
 class Wizard extends Player {
     constructor(name, type) {
         super(name, type);
