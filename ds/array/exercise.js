@@ -26,6 +26,7 @@ const obj4 = {
 // is a way to create multiple instances of an object type
 class Player {
     constructor(name, type) {
+        console.log('player', this);
         this.name = name;
         this.type = type;
     }
@@ -40,6 +41,7 @@ class Player {
 // subclass can override methods from the parent class
 class Wizard extends Player {
     constructor(name, type) {
+        console.log('wizard', this);
         super(name, type);
     }
     play() {
