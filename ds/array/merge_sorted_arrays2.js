@@ -13,6 +13,7 @@ function mergeSortedArrays(array1, array2){
       return array1;
     }
   
+    // We need to keep track of the current index of each array and compare the current items of both arrays. We will push the smaller item into the merged array and move the index of that array forward. We will continue this process until we have gone through both arrays.
     while (array1Item || array2Item){
      if(array2Item === undefined || array1Item < array2Item){
        mergedArray.push(array1Item);
