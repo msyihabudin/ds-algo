@@ -25,5 +25,5 @@ function reverse2(str){
 const reverse3 = str => [...str].reverse().join('');
 
 reverse('Timbits Hi')
-reverse('Timbits Hi')
+reverse2('Timbits Hi')
 reverse3('Timbits Hi')
